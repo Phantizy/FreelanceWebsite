@@ -203,7 +203,7 @@ body.dark-mode {
   }
 
   .dark-mode .text-primary {
-    color: #bb86fc !important;
+    color: white !important;
   }
 
   .dark-mode .btn-primary {
@@ -213,17 +213,31 @@ body.dark-mode {
 
   .dark-mode .btn-light {
     background-color: #333;
-    color: #fff;
+    color: #000000;
   }
 
+  .dark-mode h1, h5, a {
+    color: white;
+  }
+
+  
+
   .dark-mode .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #000;
   }
 
   .dark-mode .carousel-caption,
   .dark-mode .feature-item {
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  @media (max-width: 768px) {
+    #darkModeToggle {
+        width: 100%;
+        background-color: #000000;
+        padding: 10px 10px;
+    }
+}
 
 /*** Features ***/
 .feature-row {
@@ -519,7 +533,7 @@ body.dark-mode {
 }
 
 .team-item .team-social li .btn:hover {
-    color: #FFFFFF;
+    color: #000000;
     background: var(--primary);
 }
 
